@@ -1,3 +1,15 @@
-year_input = int(input())
-year_input -= 543
-print(year_input)
+def check_and_clear(box):
+    print("불량품이 있으면 box를 clear합니다.")
+    if "불량품" in box.keys():
+        box.clear()
+
+
+box1 = {"불량품": 10}
+check_and_clear(box1)
+# {}가 출력되어야합니다.
+print(box1)
+
+box2 = {"정상품": 10}
+check_and_clear(box2)
+# {"정상품": 10}가 출력되어야합니다.
+print(box2)
