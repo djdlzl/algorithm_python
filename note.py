@@ -1,15 +1,12 @@
-def check_and_clear(box):
-    print("불량품이 있으면 box를 clear합니다.")
-    if "불량품" in box.keys():
-        box.clear()
+from itertools import permutations
+
+list1 = [1, 2, 3]
 
 
-box1 = {"불량품": 10}
-check_and_clear(box1)
-# {}가 출력되어야합니다.
-print(box1)
+def solution(mylist):
+    answer = sorted(map(list, permutations(mylist)))
+    print(answer)
+    return answer
 
-box2 = {"정상품": 10}
-check_and_clear(box2)
-# {"정상품": 10}가 출력되어야합니다.
-print(box2)
+
+solution(list1)
