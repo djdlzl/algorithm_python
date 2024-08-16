@@ -3,7 +3,6 @@ from itertools import combinations
 
 num = []
 
-
 for _ in range(9):
     num.append(int(sys.stdin.readline().rstrip('\n')))
 
