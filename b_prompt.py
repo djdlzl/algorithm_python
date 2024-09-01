@@ -18,4 +18,5 @@ for word in prompt_word:
                 prompt_comparison[i] = '?'
 
 prompt_result = ''.join(prompt_comparison)
-print(prompt_result)
+
+print(prompt_result)    
